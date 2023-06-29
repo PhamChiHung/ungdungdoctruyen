@@ -73,8 +73,10 @@ public class ManDangNhap extends AppCompatActivity {
 
                         startActivity(intent);
                     }
-                    else {
-                        Toast.makeText(ManDangNhap.this, "Tài khoản hoặc mật khẩu chưa đúng !", Toast.LENGTH_SHORT).show();
+                    else if(datatentaikhoan.equals(tentaikhoan) && !datamatkhau.equals(matkhau)) {
+                        Toast.makeText(ManDangNhap.this, "Mật khẩu không đúng !", Toast.LENGTH_SHORT).show();
+                    }else if(!datatentaikhoan.equals(tentaikhoan) && datamatkhau.equals(matkhau)) {
+                        Toast.makeText(ManDangNhap.this, "Tài khoản không đúng !", Toast.LENGTH_SHORT).show();
                     }
                 }
                 //Thực hiện trả cursor về đầu
