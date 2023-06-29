@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManTimKiem"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <EditText
+        android:textColor="#040404"
+        android:id="@+id/timkiem"
+        android:hint="search"
+        android:textColorHint="#040404"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"></EditText>
+    <ListView
+        android:background="#22B3CD"
+        android:id="@+id/listviewTimKiem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>
