@@ -48,6 +48,7 @@
                 <ListView
                     android:background="#22B3CD"
                     android:id="@+id/listviewNew"
+                    android:layout_gravity="start"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"></ListView>
             </LinearLayout>

@@ -8,6 +8,11 @@
     android:padding="10dp"
     android:orientation="vertical">
 
+    <ImageButton
+        android:id="@+id/dkdangnhap"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
     <TextView
         android:layout_marginTop="100dp"
         android:layout_gravity="center"
@@ -48,11 +53,5 @@
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-    <Button
-        android:id="@+id/dkdangnhap"
-        android:text="Trở về đăng nhập"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+
 </LinearLayout>

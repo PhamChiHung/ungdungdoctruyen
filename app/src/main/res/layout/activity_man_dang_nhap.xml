@@ -39,13 +39,13 @@
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:text="Đăng nhập"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_width="150dp"
+        android:layout_height="wrap_content" />
     <Button
         android:id="@+id/dangky"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:text="Đăng ký"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"/>
 </LinearLayout>

@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.example.ungdungdoctruyen.database.databasedoctruyen;
@@ -15,7 +16,8 @@ import com.example.ungdungdoctruyen.model.TaiKhoan;
 public class ManDangKy extends AppCompatActivity {
 
     EditText edtDKTaiKhoan,edtDKMatKhau,edtDKEmail;
-    Button btnDKDangKy,btnDKDangNhap;
+    Button btnDKDangKy;
+    ImageButton btnDKDangNhap;
 
     databasedoctruyen databasedoctruyen;
     @Override
@@ -36,12 +38,13 @@ public class ManDangKy extends AppCompatActivity {
 
                 TaiKhoan taiKhoan1 = CreateTaiKhoan();
                 if(taiKhoan1.equals("") || matkhau.equals("") || email.equals("")){
-                    Log.e("Thông báo : ","Chưa nhập đầy đủ thông tin");
+                    Toast.makeText(ManDangKy.this, "Chưa nhập đầy đủ thông tin", Toast.LENGTH_SHORT).show();
                 }
                 //nếu nhập đủ thông tin thì add tài khoản vào database
                 else{
                     databasedoctruyen.AddTaiKhoan(taiKhoan1);
                     Toast.makeText(ManDangKy.this, "Đăng ký thành công", Toast.LENGTH_LONG).show();
+                    finish();
                 }
             }
         });
